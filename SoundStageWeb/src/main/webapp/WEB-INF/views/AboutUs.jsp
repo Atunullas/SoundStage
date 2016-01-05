@@ -12,9 +12,10 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Registration</title>
 </head>
- <body>
+<body>
 	<jsp:include page="header.jsp"></jsp:include>
-  <div style="margin-top: 100px;margin-left: 25%;">
-<h1> Welcome to Sound &amp; Stage Entertainment</h1>
-</div>
-</body></html>
+	<div style="margin-top: 100px; margin-left: 25%;">
+		<h1>Welcome to Sound &amp; Stage Entertainment</h1>
+	</div>
+</body>
+</html>

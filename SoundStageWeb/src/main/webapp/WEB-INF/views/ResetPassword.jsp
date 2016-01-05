@@ -31,40 +31,45 @@ li {
 .warning {
 	color: black
 }
-
-.center {
-	position: absolute;
-	top: 40%;
-	left: 50%;
-	margin-right: -50%;
-	transform: translate(-50%, -50%);
-}
 </style>
 <body>
 	<jsp:include page="header.jsp"></jsp:include>
-	<div class="well center" style="width: 400px;">
-		<legend> Reset Password</legend>
-		<form action="ResetPassword.do" id="resetPassword">
+	<form action="ResetPassword.do" id="resetPassword" class="form-group">
+		<div s	style="margin-top: 15%; margin-left: 35%">
+			<b>
+				Reset Password
+			</b>
 			<table>
 				<tr>
-					<td>E-mail ID</td>
-					<td><input type="text" placeholder="Registered Email-Id"
-						class="col-md-12" /></td>
-				</tr>
-				<tr>
-					<td>Phone number</td>
-					<td><input type="number" placeholder="Registered Phone No"
-						class="col-md-12" /></td>
+					<td>
+						E-mail ID
+					</td>
+					<td>
+						<input type="email" placeholder="Email"	class="form-control" />
+					</td>
 				</tr>
 				<tr>
 					<td>
-						<button type="submit" class="btn btn-success">Reset</button>
+						Phone number
 					</td>
-					<td><button type="button" id="cancel " name="cancel"
-							class="btn btn-danger" onclick="location.href = 'home.jsp'">Cancel</button></td>
+					<td>
+						<input type="text" placeholder="Registered Phone No" class="form-control number" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<button type="submit" class="btn btn-default">
+							Reset
+						</button>
+					</td>
+					<td>
+						<button type="button" id="cancel " name="cancel" class="btn btn-danger" onclick="location.href = 'home.jsp'">
+							Cancel
+						</button>
+					</td>
 				</tr>
 			</table>
-		</form>
-	</div>
+		</div>
+	</form>
 </body>
 </html>

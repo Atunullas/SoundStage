@@ -46,28 +46,9 @@ li {
 }
 </style>
 </head>
-<body style="background-size: 100%;"
-	background="<c:url value="/resources/bg/homebg.jpg" />">
-	<nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed"
-				data-toggle="collapse" data-target="#navbar" aria-expanded="false"
-				aria-controls="navbar">
-				<span class="sr-only">Toggle navigation</span> <span
-					class="icon-bar"></span> <span class="icon-bar"></span> <span
-					class="icon-bar"></span>
-			</button>
-			<a class="navbar-brand" href="/SoundStageWeb/home.jsp">Sound &amp; Stage Entertainment</a>
-		</div>
-
-
-		<ul id="navbar" class="nav navbar-nav navbar-right"
-			style="margin-right: 5px;">
-			<li class="active"><a href="">Welcome Guest!</a></li>
-		</ul>
-
-	</nav>
-
+<body>
+	<jsp:include page="header.jsp"></jsp:include>
+	
 	<div class="bs-example" style="margin-top: 100px;">
 		<div id="myCarousel" class="carousel slide" data-interval="3000"
 			data-ride="carousel">

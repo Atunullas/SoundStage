@@ -47,8 +47,6 @@
           <string>WEB-INF/web.xml</string>
           <string>WEB-INF/classes/bootstrap/css/bootstrap-responsive.css</string>
           <string>WEB-INF/classes/bootstrap/css/bootstrap.css</string>
-          <string>WEB-INF/classes/bootstrap/img/glyphicons-halflings-white.png</string>
-          <string>WEB-INF/classes/bootstrap/img/glyphicons-halflings.png</string>
           <string>WEB-INF/classes/bootstrap/js/bootstrap.js</string>
           <string>WEB-INF/classes/bootstrap/js/bootstrap.min.js</string>
           <string>WEB-INF/classes/bootstrap/js/jquery.min.js</string>

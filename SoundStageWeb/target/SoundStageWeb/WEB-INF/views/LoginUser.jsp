@@ -11,7 +11,7 @@
 
 <html>
 <head>
-<title>Sound & Stage Entertainment - User Login</title>
+<title>Sound &amp; Stage Entertainment - User Login</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -44,7 +44,6 @@
 							}
 						});
 			});
-			
 </script>
 </head>
 <style>
@@ -52,82 +51,62 @@ table {
 	border-collapse: separate;
 	border-spacing: 10px;
 }
-
-li {
-	color: black;
-	font-weight: bold
-}
-
+ 
 .warning {
 	color: red
 }
-.center{
- position: absolute;
-        top: 40%;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, -50%); 
-}
+ 
 </style>
-<body >
+<body>
+	<jsp:include page="header.jsp"></jsp:include>
 
-
-	<nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
-	<div class="navbar-header">
-		<a class="navbar-brand" href="home.jsp">Sound &amp; Stage
-			Entertainment</a> 
-	</div>
-	<div class="navbar-collapse collapse">
-
-		<ul class="nav navbar-nav navbar-right" style="margin-right: 5px;">
-			<li><a href="AboutUs.view">AboutUs</a></li>
-			<li class="dropdown"><a href="#" class="dropdown-toggle"
-				data-toggle="dropdown" role="button" aria-expanded="false">Help
-					<i class="icon-question-sign icon-white"> </i><span class="caret"></span>
-			</a>
-				<ul  id="navbar" class="dropdown-menu" role="menu">
-					<li><a href="Register.do">Register</a></li>
-					<li class="divider"></li>
-					<li class="dropdown-header">Skip Login</li>
-					<li><a href="GuestUser.view">Login as Guest</a></li>
-				</ul></li>
-		</ul>
-	</div>
-	</nav>
-
-	<form action="Validate.run" id="login" class="center">
-		<div class="well"
-			style=" width: 375px;">
-			<legend style="margin-left: 2px"> Login </legend>
-			<fieldset>
+	<form action="Validate.run" id="login" class="form-group">
+		<div style="width: 375px;margin-left: 40%;margin-top:20%;">
+			<b> Login </b>
 				<table>
 					<tr>
-						<td colspan="2" id="validate" style="color:red"></td>
+						<td colspan="2" id="validate" style="color: red"></td>
 					</tr>
 					<tr>
-						<td id="user"><label><b>User Name<span class="warning">*</span></b></label></td>
-						<td><input type="Text" class="col-md-12" name="username"
-							placeholder="Type your username.." id="username"
-							onkeypress="emptyinput()"></td>
-
+						<td id="user">
+							<label>
+								<b>User Name
+									<span class="warning">*</span>
+								</b>
+							</label>
+						</td>
+						<td>
+							<input type="text" class="form-control" name="username" placeholder="Type your username.." id="username"onkeypress="emptyinput()">
+						</td>
 					</tr>
 					<tr>
-						<td><label><b>Password<span class="warning">*</span></b></label></td>
-						<td><input type="password" class="col-md-12" name="password"
-							placeholder="Type your Password.." id="password"
-							onkeypress="emptyinput()" onclick="Register.jsp"></td>
+						<td>
+							<label>
+								<b>Password
+									<span class="warning">*</span>
+								</b>
+							</label>
+						</td>
+						<td>
+							<input type="password" class="form-control" name="password" placeholder="Type your Password.." id="password" onkeypress="emptyinput()" onclick="Register.jsp">
+						</td>
 						<td id="pass" class="warning"></td>
 					</tr>
 					<tr>
-						
-						<td style="float: right;"><button type="submit" class="btn btn-primary">Login</button></td>
-							<td><button type="button" class="btn btn-warning">
-								Forgot Password <i class="icon-question-sign icon-white"></i>
-							</button></td>
+						<td style="float: right;">
+							<button type="submit" class="btn btn-default">
+								Login
+							</button>
+						</td>
+						<td>
+							<button type="button" class="btn btn-primary">
+								Forgot Password 
+								<i class="icon-question-sign icon-white"></i>
+							</button>
+						</td>
 					</tr>
 				</table>
-			</fieldset>
-		</div>
-	</form>
-</body>
+			</div>
+		</form>
+	</body>
 </html>

@@ -21,25 +21,6 @@ li { color :black ; font-weight:bold }
 .warning { color :black }
 </style> 
 <body>
-	
-<nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
-   <div class="navbar-header">
-      <a class="navbar-brand" href="home.jsp">Sound &amp; Stage Entertainment</a>
-      <button type="button" class="navbar-toggle collapsed"
-					data-toggle="collapse" data-target="#navbar" aria-expanded="false"
-					aria-controls="navbar">
-					<span class="sr-only">Toggle navigation</span> <span
-						class="icon-bar"></span> <span class="icon-bar"></span> <span
-						class="icon-bar"></span>
-				</button>
-   </div>
-   
-      <ul id="navbar" class="nav navbar-nav navbar-right" style="margin-right:5px;">
-		 <li><a href="AboutUs.view">AboutUs</a></li>
-         <li class="active"><a  href="Login.do">Already a User? Login</a></li>
-         <li> <a href="Register.do">Register</a></li>
-      </ul>
-   
-</nav>
+<jsp:include page="header.jsp"></jsp:include>
 <img src ="resources/CarouselImages/annabelle.jpg">
 </body></html>
