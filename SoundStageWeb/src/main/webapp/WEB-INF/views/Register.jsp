@@ -25,7 +25,7 @@ $(document).ready(
 		var email = $('#email').val();
 		var birthDate = $('#birthDate').val();
 		var gender = $('#gender').val();
-		var phoneNo = $('#phoneNo').val();
+		var number = $('#number').val();
 		var address = $('#address').val();
 		var landmark = $('#landmark').val();
 		var city = $('#city').val();
@@ -38,7 +38,7 @@ $(document).ready(
 				&& (email == null || email == "") 
 				&& (birthDate == null || birthDate == "") 
 				&& (gender == null || gender == "" || gender=="Gender") 
-				&& (phoneNo == null || phoneNo == "") 
+				&& (number == null || number == "") 
 				&& (address == null || address == "")
 				&& (landmark == null || landmark == "")
 				&& (city == null || city == "")
@@ -88,7 +88,7 @@ $(document).ready(
 							<span class="warning">*</span>
 						</td>
 						<td>
-							<input type="text" placeholder="Email" id="email" name="email" class="form-control" />
+							<input type="email" placeholder="Email" id="email" name="email" class="form-control" />
 						</td>
 					</tr>
 					<tr>
@@ -114,7 +114,7 @@ $(document).ready(
 							<span class="warning">*</span>
 						</td>
 						<td>
-							<input type="text" placeholder="Phone No"  id="phoneNo" name="phoneNo" class="form-control"/>
+							<input type="text" placeholder="Phone No"  id="number" name="phoneNo" class="form-control"/>
 						</td>
 					</tr>
 					<tr>

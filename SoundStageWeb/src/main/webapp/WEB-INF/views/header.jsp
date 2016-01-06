@@ -11,27 +11,31 @@
 <script src="<c:url value="/resources/bootstrap/js/jquery.min.js" />"></script>
 <script src="<c:url value="/resources/bootstrap/js/bootstrap.js" />"></script>
 <script type="text/javascript">
-	$(document).ready(
-			function() {
+	$(document).ready(function() {
 				$('#login').submit(
 						function() {
 							var user = $('#username').val();
 							var pass = $('#password').val();
 							if ((user == null || user == "")
 									&& (pass == null || pass == "")) {
-								$('#validate').html("Invalid Login").show().fadeOut(1000);
+								$('#validate').html("Invalid Login").show().fadeOut(1500);
 								return false;
 							} else if (user == null || user == "") {
-								$('#validate').html("Bad Credentials").show().fadeOut(1000);
+								$('# ').html("Bad Credentials").show().fadeOut(1500);
 								return false;
 							} else if (pass == null || pass == "") {
-								$('#validate').html("Bad Credentials").show().fadeOut(1000);
+								$('#validate').html("Bad Credentials").show().fadeOut(1500);
 								return false;
 							} else {
 								return true;
 							}
 						});
-			});
+				$("#number").keypress(function (e) {
+					if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+							return false;
+					    	}
+					});
+	});
 	function showLogin() {
 		if(document.getElementById("loginDiv").style.display=="block"){
 			document.getElementById("loginDiv").style.display = "none";
@@ -54,6 +58,15 @@ table {
 
 .smallfont {
 	font-size: 12px;
+}
+
+body {
+	background: url('/SoundStageWeb/resources/bg/homebg.jpg') no-repeat
+		center center fixed;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 </style>
 </head>

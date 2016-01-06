@@ -53,7 +53,7 @@ li {
 						Phone number
 					</td>
 					<td>
-						<input type="text" placeholder="Registered Phone No" class="form-control number" />
+						<input type="text" id="number" placeholder="Registered Phone No" class="form-control number" />
 					</td>
 				</tr>
 				<tr>

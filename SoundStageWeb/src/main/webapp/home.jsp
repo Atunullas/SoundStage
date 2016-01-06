@@ -10,9 +10,8 @@
 	rel="SHORTCUT ICON">
 <script src="<c:url value="/resources/bootstrap/js/jquery.min.js" />"></script>
 <script src="<c:url value="/resources/bootstrap/js/bootstrap.js" />"></script>
- </head>
+</head>
 <body>
 	<jsp:include page="WEB-INF/views/header.jsp"></jsp:include>
-		<%-- <jsp:include page="/WEB-INF/views/FirstMovie.jsp"></jsp:include> --%>
 </body>
 </html>
