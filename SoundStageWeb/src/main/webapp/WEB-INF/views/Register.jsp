@@ -11,12 +11,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Registration</title>
-<link href="<c:url value="/resources/bootstrap/css/bootstrap.min.css" />" rel="stylesheet">
-<script src="<c:url value="/resources/bootstrap/js/jquery.min.js" />"></script>
-<script src="<c:url value="/resources/bootstrap/js/bootstrap.min.js" />"></script>
 <script>
-$(document).ready(
-		function() {
+$(document).ready(function() {
 			$('#register').submit(
 					function() {
 		var firstName = $('#firstName').val();
@@ -51,55 +47,52 @@ $(document).ready(
 		});
 });
 </script>
-<style>
-	table { border-collapse: separate; border-spacing: 10px; }
-	.warning { color :red }
-</style> 
 </head>
 <body>
 	<jsp:include page="header.jsp"></jsp:include>
 	<form action="Login.do" id="register" class="form-group">
-			<div class="box" style="width: 350px;margin-top:15%;margin-left:40%;"  >
-			<b style="width: 300px">Registration Form </b>
-				<table style="margin-left:0px;" >
+			<div style="margin-top:10%;margin-left:40%;">
+				<table class="well">
 					<tr>
-						<td colspan="2" id="validate" class="warning"></td>
+						<td><b>Registration</b></td>
+					</tr>
+					<tr></tr>
+					<tr>
+						<td colspan="2" id="validate" class="mandatory"></td>
 					</tr>
 					<tr>
-						<td>First Name<span class="warning">*</span></td>
+						<td>First Name <span class="mandatory">*</span></td>
 						<td>
 							<input type="text" placeholder="First Name" id="firstName" name="firstName"  class="form-control" />
 						</td>
 					</tr>
 					<tr>
-						<td>Last Name<span class="warning">*</span></td>
+						<td>Last Name <span class="mandatory">*</span></td>
 						<td>
 							<input type="text" placeholder="Last Name" id="lastName" name="lastName" class="form-control"/>
 						</td>
 					</tr>
 					<tr>
-						<td>Password<span class="warning">*</span></td>
+						<td>Password <span class="mandatory">*</span></td>
 						<td>
-							<input type="password" placeholder="Password" id="password" name="password" class="form-control"/>
+							<input type="password" placeholder="Password" id="password" name="password" class="form-control">
 						</td>
 					</tr>
 					<tr>
-						<td>Email
-							<span class="warning">*</span>
+						<td>Email <span class="mandatory">*</span>
 						</td>
 						<td>
 							<input type="email" placeholder="Email" id="email" name="email" class="form-control" />
 						</td>
 					</tr>
 					<tr>
-						<td>Date of Birth<span class="warning">*</span></td>
+						<td>Date of Birth <span class="mandatory">*</span></td>
 						<td>
 							<input type="text"  placeholder="BirthDate" id="birthDate" name="birthDate" class="form-control"/>
 						</td>
 					</tr>
 					<tr>
-						<td>Gender
-							<span class="warning">*</span>
+						<td>Gender <span class="mandatory">*</span>
 						</td>
 						<td>
 							<select name="gender" id="gender" class="form-control">
@@ -110,48 +103,42 @@ $(document).ready(
 						</td>
 					</tr>
 					<tr>
-						<td>Contact Number
-							<span class="warning">*</span>
+						<td>Contact Number <span class="mandatory">*</span>
 						</td>
 						<td>
 							<input type="text" placeholder="Phone No"  id="number" name="phoneNo" class="form-control"/>
 						</td>
 					</tr>
 					<tr>
-						<td>Address
-							<span class="warning">*</span>
+						<td>Address <span class="mandatory">*</span>
 						</td>
 						<td>
 							<input type="text" placeholder="Full-Address" id="address"  name="address" class="form-control"/>
 						</td>
 					</tr>
 					<tr>
-						<td>Landmark
-							<span class="warning">*</span>
+						<td>Landmark <span class="mandatory">*</span>
 						</td>
 						<td>
 							<input type="text" placeholder="Landmark" id="landmark" name="landmark" class="form-control" />
 						</td>
 						</tr>
 					<tr>
-						<td>City
-							<span class="warning">*</span>
+						<td>City <span class="mandatory">*</span>
 						</td>
 						<td>
 							<input type="text" placeholder="City" id="city" name="city" class="form-control" />
 						</td>
 					</tr>
 					<tr>
-						<td>State
-							<span class="warning">*</span>
+						<td>State <span class="mandatory">*</span>
 						</td>
 						<td>
 							<input type="text" placeholder="State" id="state"  name="state" class="form-control"/>
 						</td>
 					</tr>
 					<tr>
-						<td>Zip Code
-							<span class="warning">*</span>
+						<td>Zip Code <span class="mandatory">*</span>
 						</td>
 						<td>
 							<input type="text" placeholder="Zip code" id="code" name="code" class="form-control"/>
@@ -163,8 +150,7 @@ $(document).ready(
 							<button type="submit" class="btn btn-default">
 								Register 
 							</button>
-							&nbsp;&nbsp;
-							<button type="button" id="cancel "name="cancel" class="btn btn-danger" onclick="location.href = 'home.jsp'" >
+							<button type="button" id="cancel "name="cancel" class="btn btn-danger" onclick="location.href = 'home.jsp'"  style="float:right;">
 								Cancel
 							</button>
 						</td>

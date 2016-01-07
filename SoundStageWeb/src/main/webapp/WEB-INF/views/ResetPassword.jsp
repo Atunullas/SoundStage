@@ -11,38 +11,21 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Registration</title>
-<link
-	href="<c:url value="/resources/bootstrap/css/bootstrap.min.css" />"
-	rel="stylesheet">
-<script src="<c:url value="/resources/bootstrap/js/jquery.min.js" />"></script>
-<script src="<c:url value="/resources/bootstrap/js/bootstrap.min.js" />"></script>
 </head>
-<style>
-table {
-	border-collapse: separate;
-	border-spacing: 10px;
-}
-
-li {
-	color: black;
-	font-weight: bold
-}
-
-.warning {
-	color: black
-}
-</style>
 <body>
 	<jsp:include page="header.jsp"></jsp:include>
 	<form action="ResetPassword.do" id="resetPassword" class="form-group">
-		<div s	style="margin-top: 15%; margin-left: 35%">
-			<b>
-				Reset Password
-			</b>
-			<table>
+		<div style="margin-top: 15%; margin-left: 35%">
+			<table class="well" width="400px">
+			<tr>
+				<td>
+					<b> Reset Password</b>
+				</td>
+			</tr>
+			<tr></tr>
 				<tr>
 					<td>
-						E-mail ID
+						<b>E-mail ID</b>
 					</td>
 					<td>
 						<input type="email" placeholder="Email"	class="form-control" />
@@ -50,20 +33,19 @@ li {
 				</tr>
 				<tr>
 					<td>
-						Phone number
+						<b>Phone number</b>
 					</td>
 					<td>
 						<input type="text" id="number" placeholder="Registered Phone No" class="form-control number" />
 					</td>
 				</tr>
 				<tr>
+					<td></td>
 					<td>
 						<button type="submit" class="btn btn-default">
 							Reset
 						</button>
-					</td>
-					<td>
-						<button type="button" id="cancel " name="cancel" class="btn btn-danger" onclick="location.href = 'home.jsp'">
+						<button type="button" id="cancel " name="cancel" class="btn btn-danger" onclick="location.href ='home.jsp'" style="float: right;">
 							Cancel
 						</button>
 					</td>

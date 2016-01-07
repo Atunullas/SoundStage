@@ -14,12 +14,6 @@
 <title>Sound &amp; Stage Entertainment - User Login</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<link
-	href="<c:url value="/resources/bootstrap/css/bootstrap.min.css" />"
-	rel="stylesheet">
-<script src="<c:url value="/resources/bootstrap/js/jquery.min.js" />"></script>
-<script src="<c:url value="/resources/bootstrap/js/bootstrap.min.js" />"></script>
 <script type="text/javascript">
 	$(document).ready(
 			function() {
@@ -29,9 +23,7 @@
 							var pass = $('#password').val();
 							if ((user === null || user === "")
 									&& (pass === null || pass === "")) {
-								$('#validate').text(
-										"Please key in the mandatory fields");
-
+								$('#validate').text("Please key in the mandatory fields");
 								return false;
 							} else if (user === null || user === "") {
 								$('#validate').text("Bad Credentials");
@@ -46,24 +38,16 @@
 			});
 </script>
 </head>
-<style>
-table {
-	border-collapse: separate;
-	border-spacing: 10px;
-}
- 
-.warning {
-	color: red
-}
- 
-</style>
 <body>
 	<jsp:include page="header.jsp"></jsp:include>
 
 	<form action="Validate.run" id="login" class="form-group">
-		<div style="width: 375px;margin-left: 40%;margin-top:20%;">
-			<b> Login </b>
-				<table>
+		<div style="margin-left:35%;margin-top:15%;">
+				<table class="well" width="400px">
+					<tr>
+						<td><b>Login</b></td>
+						<td></td>
+					</tr>
 					<tr>
 						<td colspan="2" id="validate" style="color: red"></td>
 					</tr>
@@ -71,35 +55,35 @@ table {
 						<td id="user">
 							<label>
 								<b>User Name
-									<span class="warning">*</span>
 								</b>
 							</label>
 						</td>
 						<td>
-							<input type="text" class="form-control" name="username" placeholder="Type your username.." id="username"onkeypress="emptyinput()">
+							<input type="email" class="form-control" name="username" placeholder="Email" id="username"onkeypress="emptyinput()">
 						</td>
 					</tr>
 					<tr>
 						<td>
 							<label>
 								<b>Password
-									<span class="warning">*</span>
 								</b>
 							</label>
 						</td>
 						<td>
-							<input type="password" class="form-control" name="password" placeholder="Type your Password.." id="password" onkeypress="emptyinput()" onclick="Register.jsp">
+							<input type="password" class="form-control" name="password" placeholder="Password" id="password" onkeypress="emptyinput()" onclick="Register.jsp">
 						</td>
 						<td id="pass" class="warning"></td>
 					</tr>
+					<tr></tr>
+					<tr></tr>
 					<tr>
-						<td style="float: right;">
+						<td>
+						</td>
+						<td>
 							<button type="submit" class="btn btn-default">
 								Login
 							</button>
-						</td>
-						<td>
-							<button type="button" class="btn btn-primary">
+							<button type="button" class="btn btn-primary"  style="float: right;">
 								Forgot Password 
 								<i class="icon-question-sign icon-white"></i>
 							</button>

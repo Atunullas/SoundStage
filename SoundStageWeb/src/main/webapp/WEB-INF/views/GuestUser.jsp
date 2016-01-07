@@ -4,47 +4,6 @@
 <title>Sound &amp; Stage Entertainment</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="<c:url value="/resources/bootstrap/css/bootstrap.css" />"
-	rel="stylesheet">
-<script src="<c:url value="/resources/bootstrap/js/jquery.min.js" />"></script>
-<script src="<c:url value="/resources/bootstrap/js/bootstrap.js" />"></script>
-<style type="text/css">
-h2 {
-	margin: 0;
-	color: #666;
-	padding-top: 80px;
-	font-size: 52px;
-	font-family: "trebuchet ms", sans-serif;
-}
-
-.item {
-	background: #333;
-	text-align: center;
-	height: 200px !important;
-}
-
-.carousel {
-	margin-top: 10px;
-}
-
-.bs-example {
-	margin: 20px;
-}
-
-table {
-	border-collapse: separate;
-	border-spacing: 10px;
-}
-
-li {
-	color: black;
-	font-weight: bold
-}
-
-.warning {
-	color: black
-}
-</style>
 </head>
 <body>
 	<jsp:include page="header.jsp"></jsp:include>

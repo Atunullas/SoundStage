@@ -4,10 +4,8 @@
 <title>Sound &amp; Stage Entertainment</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="<c:url value="/resources/bootstrap/css/bootstrap.css" />"
-	rel="stylesheet">
-<link href="<c:url value="/resources/bg/scilab-logo.png" />"
-	rel="SHORTCUT ICON">
+<link href="<c:url value="/resources/bootstrap/css/bootstrap.css" />" rel="stylesheet">
+<link href="<c:url value="/resources/bg/scilab-logo.png" />" rel="SHORTCUT ICON">
 <script src="<c:url value="/resources/bootstrap/js/jquery.min.js" />"></script>
 <script src="<c:url value="/resources/bootstrap/js/bootstrap.js" />"></script>
 <script type="text/javascript">
@@ -35,42 +33,45 @@
 							return false;
 					    	}
 					});
+	
+				$("#loginSpan").click(function () {
+					if($("#loginDiv").css('display')=='block'){
+						$("#loginDiv").hide();
+						$("#validate").hide();
+					} else{
+						$("#loginDiv").show();
+					}
+				});
 	});
-	function showLogin() {
-		if(document.getElementById("loginDiv").style.display=="block"){
-			document.getElementById("loginDiv").style.display = "none";
-			document.getElementById("validate").style.display ="none";
-		}else{
-			document.getElementById("loginDiv").style.display = "block";	
-		}
-	}
 </script>
 <style type="text/css">
-table {
-	margin-left: 10px;
-	border-collapse: separate;
-	border-spacing: 5px;
-}
-
-.warning {
-	color: red
-}
-
-.smallfont {
-	font-size: 12px;
-}
-
-body {
-	background: url('/SoundStageWeb/resources/bg/homebg.jpg') no-repeat
-		center center fixed;
-	-moz-background-size: cover;
-	-webkit-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
+	table {
+		margin-left: 10px;
+		border-collapse: separate;
+		border-spacing: 5px;
+	}
+	
+	body {
+		background: url('/SoundStageWeb/resources/bg/homebg.jpg') no-repeat
+			center center fixed;
+		-moz-background-size: cover;
+		-webkit-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+	
+	.mandatory {
+		color: red
+	}
+	
+	.smallfont {
+		font-size: 12px;
+	}
+	
+	
 </style>
 </head>
-<body >
+<body>
 	<nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
 		<div align="justify" style="width: 98%">
 			<span style="width: 400px"> 
@@ -80,7 +81,7 @@ body {
 				</a>
 			</span>
 			<a> 
-				<span onclick="showLogin()" class="navbar-brand navbar-right" role="navigation">
+				<span class="navbar-brand navbar-right" role="navigation" id="loginSpan">
 					&nbsp;&nbsp;Login &nbsp;
 					<span class=" glyphicon glyphicon-chevron-right"></span>
 				</span>
@@ -95,7 +96,7 @@ body {
 				</tr>
 				<tr>
 					<td class="smallfont" style="color: white">Email &nbsp;
-						<span class="warning">*</span>
+						<span class="mandatory">*</span>
 					</td>
 				</tr>
 				<tr>
@@ -105,7 +106,7 @@ body {
 				</tr>
 				<tr>
 					<td class="smallfont" style="color: white">Password&nbsp;
-						<span class="warning">*</span>
+						<span class="mandatory">*</span>
 					</td>
 				</tr>
 				<tr>
@@ -137,10 +138,5 @@ body {
 
 		</form>
 	</div>
-
-
-
-
-	<%-- <jsp:include page="/WEB-INF/views/FirstMovie.jsp"></jsp:include> --%>
 </body>
 </html>

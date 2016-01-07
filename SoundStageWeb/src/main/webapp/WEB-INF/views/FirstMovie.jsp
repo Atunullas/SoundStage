@@ -13,11 +13,6 @@
 <title>Registration</title>
  
 </head>
-<style>
-table { border-collapse: separate; border-spacing: 10px; }
-li { color :black ; font-weight:bold }
-.warning { color :black }
-</style> 
 <body >
  <jsp:include page="header.jsp"></jsp:include>
 <img src ="resources/CarouselImages/avengers.jpg">
