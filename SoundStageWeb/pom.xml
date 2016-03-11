@@ -2,7 +2,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.soundStage</groupId>
-	<artifactId>SoundStageWeb</artifactId>
+	<artifactId>SoundStage</artifactId>
 	<packaging>war</packaging>
 	<version>1.0</version>
 	<name>SoundStageWeb Maven Webapp</name>
@@ -76,17 +76,15 @@
 			<version>${spring-framework.version}</version>
 		</dependency>
 
-		<!-- JSP / SERVLET DEPENDENCY -->
+		<!-- JSP / JSTL /SERVLET DEPENDENCY -->
 
 		<dependency>
 			<groupId>javax.servlet</groupId>
-			<artifactId>jsp-api</artifactId>
-			<version>2.0</version>
-			<scope>provided</scope>
+			<artifactId>servlet-api</artifactId>
+			<version>2.5</version>
 		</dependency>
-
 		<dependency>
-			<groupId>javax.servlet</groupId>
+			<groupId>jstl</groupId>
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
 		</dependency>
@@ -99,27 +97,17 @@
 			<version>1.0.2</version>
 			<scope>provided</scope>
 		</dependency>
+
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate</artifactId>
 			<version>3.2.4.ga</version>
 		</dependency>
 
-		<!-- Logging with SLF4J & LogBack -->
-
-		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-api</artifactId>
-			<version>${slf4j.version}</version>
-			<scope>compile</scope>
-		</dependency>
-		<dependency>
-			<groupId>ch.qos.logback</groupId>
-			<artifactId>logback-classic</artifactId>
-			<version>${logback.version}</version>
-			<scope>runtime</scope>
-		</dependency>
-
+		<!-- Logging with SLF4J & LogBack <dependency> <groupId>org.slf4j</groupId> 
+			<artifactId>slf4j-api</artifactId> <version>${slf4j.version}</version> <scope>compile</scope> 
+			</dependency> <dependency> <groupId>ch.qos.logback</groupId> <artifactId>logback-classic</artifactId> 
+			<version>${logback.version}</version> <scope>runtime</scope> </dependency> -->
 		<!-- Hibernate -->
 
 		<dependency>
@@ -140,20 +128,19 @@
 			<version>1.2.2</version>
 		</dependency>
 
-	<!-- ojdbc14 -->
-
-	<dependency>
-	<groupId>com.oracle</groupId>
-	<artifactId>ojdbc14</artifactId>
-	<version>10.2.0.3.0</version>
-</dependency>
-
+		<!-- MSQL DB  
+		<dependency> 
+			<groupId>mysql</groupId> 
+			<artifactId>mysql-connector-java</artifactId> 
+			<version>5.1.6</version>
+		</dependency> 
+		-->
 
 	</dependencies>
 
 
 	<build>
-		<finalName>SoundStageWeb</finalName>
+		<finalName>SoundStage</finalName>
 		<pluginManagement>
 			<plugins>
 				<plugin>
