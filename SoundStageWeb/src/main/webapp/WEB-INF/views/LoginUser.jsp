@@ -16,10 +16,10 @@
 										"Please key in the mandatory fields");
 								return false;
 							} else if (user === null || user === "") {
-								$('#validate').text("Bad Credentials");
+								$('#validate').text("Please input the Username");
 								return false;
 							} else if (pass === null || pass === "") {
-								$('#validate').text("Bad Credentials");
+								$('#validate').text("Please input the password");
 								return false;
 							} else {
 								return true;
@@ -51,7 +51,7 @@
 					</label></td>
 					<td><input type="password" class="form-control"
 						name="password" placeholder="Password" id="password"></td>
-					<td id="pass" class="warning"></td>
+					<td id="pass"></td>
 				</tr>
 				<tr></tr>
 				<tr></tr>

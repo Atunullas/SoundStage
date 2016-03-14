@@ -7,7 +7,7 @@
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$('#home').click(function(){
-				ajaxHeadLoad('Home.view','#app');
+				ajaxHeadLoad('Home.view','#header');
 			})
 			$('#login').click(function(){
 				ajaxBodyLoad('Login.do','#body');
@@ -84,4 +84,3 @@
 		</div>
 	</nav>
 </div>
-<div id="body"></div>
